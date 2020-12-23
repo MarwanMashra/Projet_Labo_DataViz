@@ -1,0 +1,141 @@
+/***************************************************************************************************
+
+Ce fichier peut être utilisé pour modifier le style et la texture de la page du questionnaire.
+Chaque section est responsable d’une partie de la page (comme le titre du questionnaire, le fond de 
+la page, les questions, les réponses…etc). Vous pouvez facilement modifier le style des éléments de 
+la page par changer la couleur de fond, mettre une autre image de fond, changer la couleur d’écriture…etc. 
+Pour ce faire, il suffit d’insérer des propriétés CSS dans la section dédiée à l’élément que vous souhaiter 
+modifier (entre les accolades).
+
+
+Exemple :
+.élément{
+    color: red; 
+    background-color: blue;
+    background-image: url('../src/mon_image.png'); 
+}
+
+1) color: red; 
+Pour modifier la couleur du text. Vous pouvez utiliser soit les couleurs en anglais 
+(white, red, black..etc), soit en rgb (ex : rgb(134,210,182) ) , soit en code hexa (ex : #2C74D1). 
+Lien vers la palette des couleurs : https://htmlcolorcodes.com/fr/
+
+2) background-color: blue;
+Pour modifier la couleur de fond. 
+
+3) background-image: url('../src/mon_image.png');
+Pour mettre une image de fond. Vous devez mettre l'image dans le dossier src qui se trouve dans le dossier static. 
+l'url doit commencer par ../src/ suivi par le nom de l'image (ex : url('../src/mon_image.png') ).  
+
+***************************************************************************************************/
+
+
+/*
+    les cercles des réponses
+
+    seule propriété à modifier:
+
+    fill: gray;
+        pour changer la courleur du cercle en gris 
+
+*/
+
+
+/* quand ils sont actives (cliquables)*/
+.answer-circle{
+
+    fill: brown;
+
+}
+
+/* quand ils ne sont pas actives*/
+.not-active{
+    
+    fill: gray;
+}
+
+
+
+/*
+    les buttons en haut de la page
+
+    les propriétés à modifier:
+
+    1) background: gray ;
+        pour changer la couleur de fond en gris
+    2) border-color: gray ;
+        pour changer la couleur des bordures en gris
+    3) color: gray ;
+        pour changer la couleur des icons en noir 
+
+*/
+
+
+/* quand ils ne sont pas actives*/
+.button{
+
+    background: rgba(190, 190, 190, .6);
+    border-color: #505050;
+    color: black;
+
+}
+
+/* quand le souris passe sur les boutons*/
+.button:hover,.button:active{
+
+    background: gray;
+    color: white;
+    
+}
+
+
+/* La page en entier */
+body{     
+
+    background-image: url('../src/bg_page.jpg');
+
+}
+
+
+/* le titre du questionnaire */
+.questionnaire{
+
+    background-image: url('../src/bg_questionnaire.png');
+    color: black;
+
+}
+
+
+/* les labels des questions */
+.question{
+
+    background-image: url('../src/bg_question.jpg');
+    color: black;
+
+}
+
+
+/* les labels des réponses */
+.answer-label{
+
+    background-image: url('../src/bg_question.jpg');
+    color: black;
+
+}
+
+/* les labels des couleurs */
+.color-label{
+
+    background-image: url('../src/bg_question.jpg');
+    color: black;
+    
+}
+
+/* le text en dessous de la QRcode */
+#qrcodde-container > p{
+    color: black;
+}
+
+
+
+

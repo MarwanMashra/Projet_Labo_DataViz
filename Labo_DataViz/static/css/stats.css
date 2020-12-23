@@ -1,0 +1,169 @@
+
+:root{
+
+    --color-main: #4937ad;
+    --color-bg:linear-gradient(to right, #4937ad 0% 10%,#938cb1 70% 100%);     
+    --color-left:#cccccc; 
+    --color-question:radial-gradient(#cccccc 0% 50%,#938cb1);
+
+}
+
+body { 
+    font-size: 16px;
+    background:var(--color-bg);
+}
+.questionnaire-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 30%;
+    background: var(--color-left);
+    float: left;
+    
+}
+
+.questionnaire{
+    padding: 5%;
+    padding-top: 2%;
+    height: 100%;
+    text-align: center;
+}
+.questions-container{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 30%;
+    height: 100%;
+    width: 70%;
+}
+.question{
+    background: var(--color-question);
+    border-radius: 5rem 5rem 5rem 0rem;
+    padding: 2rem 3rem;
+    margin: 2rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: var(--color-main) solid .5rem;
+    box-shadow: .2rem .1rem 1.5rem var(--color-main);
+}
+.update-span{
+    text-align: right;
+    margin: 0;
+}
+/*********************************************** icons ***********************************************/
+.icon{
+    color: #505050;
+    font-size: 1.7rem;
+    margin: .3rem;
+    border-radius: 5rem;
+    vertical-align: sub;
+
+    
+}
+.clickable-icon{
+    cursor: pointer;
+    padding: .7rem;
+    transition: all 500ms ease-out;
+    background-color: transparent;
+    margin-bottom: .2rem;
+
+}
+.clickable-icon:hover{
+    background-color:rgba(128,128,128,.5);
+    color: white;
+}
+.clickable-icon:active{
+    background-color:rgba(128,128,128,.5);
+    color: white;
+}
+.print-icon{
+    margin-left:  25%;
+    margin-right: 25%;
+}
+.time-icon{
+    font-size: 1.5rem;
+}
+
+/********************************************************************************************************/
+.phrase{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.nbTotal-number{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #404040;
+}
+.title-questionnaire{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#delete-line{
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+    color: #404040;
+    bottom: .5rem;
+}
+.first-step{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.first-step:hover{
+    color: red;
+}
+#delete-line > .material-icons{
+    vertical-align: sub;
+}
+.delete-buttons{
+    display: none;
+}
+
+/************************ Buttons ************************/
+button{
+	border: none;
+	cursor: pointer;
+	display:inline-block;
+	padding:0.2em 1.2em;
+	margin:0.4em 0.3em 0.3em 0;
+	border-radius:1.5em;
+	box-sizing: border-box;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#787878;
+	text-align:center;
+    transition: color  .7s , background-color .7s;
+    margin-left: 4rem;
+    border: .1rem solid #787878;
+}
+button:hover{
+    background-color:#FFFFFF;
+    color:#404040;
+}
+.deleteButton{
+    background-color: #ce2029;
+    margin-left: .5rem;
+    border: .1rem solid #ce2029;
+}
+.deleteButton:hover{
+    color:#ce2029;
+}
+button:focus{
+	outline:0;
+}
+@media all and (max-width:30em){
+	button{
+	display:block;
+	margin:0.2em auto;
+	}
+}
+/**********************************************************/

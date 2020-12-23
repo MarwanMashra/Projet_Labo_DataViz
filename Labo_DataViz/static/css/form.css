@@ -1,0 +1,185 @@
+
+:root{
+
+    --border-size: .4rem;
+    --border-radius: 2rem;
+
+
+    --color-left:#4937ad ;
+    --color-bg: #cccccc;   
+    --color-section: #938cb1;  
+    --color-subsection:#bdbbca; 
+    --color-subsubsection:#938cb1;
+    
+}
+
+#left{
+    background: var(--color-left);
+
+}
+body {
+    font: 16px;
+    background: var(--color-bg);
+}
+.articles__link {
+    background-color: var(--color-bg);
+}
+
+.add{
+    
+    margin: 3rem;
+    z-index: 1000;
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    transition: all .5s ease-out;
+    padding: .15rem;
+    border-radius: 5rem;
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: var(--color-left);
+    color: white;
+    border: .3rem solid var(--color-left); 
+}
+.add:hover{
+    background: white;
+    color: var(--color-left);
+}
+.add:active{
+    background: #BEBEBE;
+}
+.add-icon{
+    font-size: 3rem;
+    font-weight: bold;
+}
+fieldset{
+    position: relative;
+    border: none;
+    border-radius: var(--border-radius);
+}
+fieldset > legend{
+    border-radius: var(--border-radius);
+    padding: .2rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*  section */
+.section{
+    background-color: var(--color-section);
+    width: 60%;
+    padding: 2rem 2rem .5rem 2rem;
+    margin: 0 auto;
+    border: var(--border-size) solid var(--color-left);
+}
+.section > legend{
+    background-color: var(--color-left);
+    border: var(--border-size) solid var(--color-bg);
+}
+/*  subsection */
+.section > fieldset{
+    background-color: var(--color-subsection);
+    margin: 2.5rem auto;
+    padding: 2rem;
+    width: 90%;
+    border: var(--border-size) solid var(--color-left);
+}
+
+.section > fieldset:last-of-type{
+    margin-bottom: 0;
+}
+.section > fieldset > legend{
+    background-color: var(--color-left);
+    border: var(--border-size) solid var(--color-section);
+}
+/*  subsubsection */
+#questions-container > fieldset{
+    background-color: var(--color-subsubsection);
+    margin: 2.5rem auto;
+    padding: 2rem;
+    width: 90%;
+    border: var(--border-size) solid var(--color-left);
+}
+#questions-container > fieldset > legend{
+    background-color: var(--color-left);
+    border: var(--border-size) solid var(--color-subsection);
+}
+/****************************************************************/
+.icon{
+    color: rgb(102, 102, 102);
+    vertical-align: bottom;
+    font-size: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.icon-clickable{
+    cursor: pointer;
+}
+.icon-clickable:hover{
+    color:#4b4a4a;
+}
+
+.icon-color{
+    vertical-align: middle;
+    
+}
+.error{
+    color: 	#DC143C;
+}
+.input-color{
+    margin-top: 1rem;
+}
+.delete-icon{
+    vertical-align: middle;
+    color: #DC143C ;
+    font-size: 1.7rem;
+}
+.delete-icon:hover{
+    color: red;
+}
+
+.button{
+	border: none;
+	cursor: pointer;
+    display:inline-block;
+    font-size: 1rem;
+	padding:0.4em 1.5em;
+    border-radius:1.5em;
+    margin: 1.5rem auto;
+    position: relative;
+    box-sizing: border-box;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:var(--color-left);
+	text-align:center;
+    transition: color  .5s ease-out, background-color .5s ease-out;
+    border: .25rem solid var(--color-left); 
+    font-weight: bold ;
+}
+#cancle{
+    margin-left: 17%;
+}
+#create{
+    margin-left: 8%;
+}
+.button:hover{
+    background-color:var(--color-bg);
+    color:var(--color-left);
+    
+}
+.button:focus{
+	outline:0;
+}
+@media all and (max-width:30em){
+	.button{
+	display:block;
+	margin:0.2em auto;
+	}
+}

@@ -1,0 +1,181 @@
+
+body { 
+    font-size: 16px; 
+    background-size: cover; 
+    overflow: hidden;
+}
+
+.div{
+    width: 5rem;
+    height: 5rem;
+
+}
+#divSrc{
+    float: left;
+    background-color: green;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+.divDest{
+    background-color: gray;
+    margin-top: 7%;
+    margin-left: 60%;
+    cursor: pointer;
+}
+#cyrcle{
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+}
+.line-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+.line{
+    transform-origin: left;
+}
+
+.color{
+    position:absolute;
+    cursor: pointer;
+}
+.color-label{
+    display: table;
+    position: absolute;
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+}
+
+.color-label > span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 0 .3rem;
+
+
+}
+.questionnaire{
+    position:absolute;
+    background-size: cover; 
+    background-position: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.question{
+    position:absolute;
+    display: table;
+    background-size: cover; 
+    background-position: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    
+}
+.question > span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.shadow{
+    box-shadow: 0px 0px 5px 8px #555;
+}
+.answer-circle{
+    fill: brown;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.not-active{
+    fill: gray;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.answer-label{
+    position: absolute;
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+    display: table;
+    font-weight: bold;
+    z-index: 5;
+}
+.answer-label > span{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 .3rem;
+}
+
+.submit{
+    position: absolute;
+    font-size: 1.8rem;
+    font-family: cursive;
+    background-color: #BEBEBE	;
+    outline: none;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    border: solid grey .3rem;
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+.submit-active{
+    opacity: 1;
+    background: green;
+    color: white;
+    border: #005800 solid .3rem;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.submit-active:hover{
+    background: #16b826;
+}
+.submit-active:active{
+    transition: none;
+    background: #16b826;
+}
+
+.button{
+    position: fixed;
+    top: 0;
+    position: absolute;
+    float: left;
+    background: rgba(190, 190, 190, .6);
+    z-index: 1000;
+    transition: all 300ms ease-out;
+    padding: .4rem;
+    border-radius: .5rem;
+    border: .3rem solid #505050;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.icon{
+    font-size: 2rem;
+    min-width: 36px;
+}
+.button:hover,.button:active{
+    background: gray;
+    color: white;
+}
+.connexion > span, .deconnexion > span, .home > span{
+    vertical-align: bottom;
+}
+
+#qrcodde-container{
+    position: absolute;
+    z-index: 1000;
+
+}
+

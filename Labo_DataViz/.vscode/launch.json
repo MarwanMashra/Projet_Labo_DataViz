@@ -1,0 +1,16 @@
+
+{
+    "version": "0.1.0",
+    "configurations": [
+    
+
+        {
+            "name": "localhost",
+            "type": "chrome",
+            // type: "firefox",
+            "request": "launch",
+            "url": "http://localhost:5000/",
+            "webRoot": "${workspaceFolder}"
+        }
+    ],
+}
