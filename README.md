@@ -21,21 +21,24 @@ vous pouvez le faire via la ligne de commande, il suffit d'utiliser la commande 
 --------------------------
 Contenant du code source :
 --------------------------
-/requirements.txt              - le fichier contenant les modules python nécessaires à l’exécution de l’application
-/ Labo_DataViz                 - le dossier contenant code source de l'application 
------ / app.py                 - le script python contenant l'application  
------ / server                 - le dossier contenant les scripts python (section : INSTALLATION)
----------- / mongo.ini         - le fichier contenant les informations de connexion à la BDD (section : Connexion à la base de données)
------ / templates              - le dossier contenant les fichiers HTML
------ / static                 - le dossier contenant les autres fichiers comme CSS, JS..etc
----------- / css               - le dossier contenant les fichiers CSS
----------- / js                - le dossier contenant les fichiers JS
----------- / src               - le dossier contenant les images
---------------- /icons         - le dossier contenant les icons
----------- / config            - le dossier contenant les fichiers de configuration (section : Fichiers de configuration)
---------------- / config.js    - le fichier contenant les paramètres de la formulaire de création de questionnaires
---------------- / config.css   - le fichier permettant de modifier le style de la page de questionnaire
-
+```
+Projet_LaboDataviz/
+│
+│--- requirements.txt            - le fichier contenant les modules python nécessaires à l’exécution de l’application
+│─── Labo_DataViz/               - le dossier contenant code source de l'application 
+│   │--- app.py                  - le script python contenant l'application  
+│   │─── server/                 - le dossier contenant les scripts python (section : INSTALLATION)
+│       │--- mongo.ini           - le fichier contenant les informations de connexion à la BDD (section : Connexion à la base de données)
+│   │─── templates/              - le dossier contenant les fichiers HTML
+│   │─── static/                 - le dossier contenant les autres fichiers comme CSS, JS..etc
+│       │─── css/                - le dossier contenant les fichiers CSS
+│       │─── js/                 - le dossier contenant les fichiers JS
+│       │─── src/                - le dossier contenant les images
+│           │─── icons/          - le dossier contenant les icons
+│       │─── config/            - le dossier contenant les fichiers de configuration (section : Fichiers de configuration)
+│           │--- config.js      - le fichier contenant les paramètres de la formulaire de création de questionnaires
+│           │--- config.css     - le fichier permettant de modifier le style de la page de questionnaire
+```
 
 ---------------------------------
 Fonctionnement de l'application :
