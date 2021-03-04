@@ -2,7 +2,6 @@
 * README pour le projet Labo DataViz 
 * Auteur Marwan MASHRA, 2020
 * projet réalisé durant un stage au LIRMM 
-*
 ***************************************************************
 
 
