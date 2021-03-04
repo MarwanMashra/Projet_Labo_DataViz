@@ -35,9 +35,9 @@ Projet_LaboDataviz/
 │       │─── js/                 - le dossier contenant les fichiers JS
 │       │─── src/                - le dossier contenant les images
 │           │─── icons/          - le dossier contenant les icons
-│       │─── config/            - le dossier contenant les fichiers de configuration (section : Fichiers de configuration)
-│           │--- config.js      - le fichier contenant les paramètres de la formulaire de création de questionnaires
-│           │--- config.css     - le fichier permettant de modifier le style de la page de questionnaire
+│       │─── config/             - le dossier contenant les fichiers de configuration (section : Fichiers de configuration)
+│           │--- config.js       - le fichier contenant les paramètres de la formulaire de création de questionnaires
+│           │--- config.css      - le fichier permettant de modifier le style de la page de questionnaire
 ```
 
 ---------------------------------
